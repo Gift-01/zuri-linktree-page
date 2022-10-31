@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+  overscroll-behavior: none;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.profileSection {
+  margin: 64px 0 56px 0;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profilePicture {
+  margin-bottom: 24px;
+}
+
+.ShareButton {
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  right: 30%;
+  top: 44px;
+  width: 40px;
+  position: absolute;
+}
+
+.threeDots {
+  display: none;
+}
+
+.link-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.footer-logo {
+  height: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.innerFooter {
+  display: flex;
+  height: 160px;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobileInnerFooter {
+  display: none;
+}
+
+.line {
+  border-top: 1px solid #eaecf0;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.innerFooter-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .line {
+    display: none;
+  }
+  .profileSection {
+    margin: 64px 0 32px 0;
+    height: unset;
+  }
+
+  .profileSection h4 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .innerFooter {
+    display: none;
+  }
+  .mobileInnerFooter {
+    margin: 0px;
+    flex-direction: column;
+    padding: 0px;
+    height: 172px;
+    font-size: 14px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 16px;
+    width: 100%;
+    border-top: 1px solid #eaecf0;
+  }
+
+  .footer-logo {
+    margin: 24px 0px;
+    height: unset;
+  }
+
+  .footer-img {
+    padding: 0px;
+  }
+
+  .innerFooterImg {
+    width: 150px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .ShareButton {
+    display: none;
+  }
+
+  .threeDots {
+    display: inline;
+    position: absolute;
+    top: 44px;
+    right: 16px;
+  }
+
+  .link-section {
+    padding: 0px 16px 0px 16px;
+  }
+}
