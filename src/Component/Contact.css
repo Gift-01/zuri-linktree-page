@@ -1,0 +1,22 @@
+.contactWrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 156px 0px 0px 0px;
+}
+form h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+form p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #475467;
+}

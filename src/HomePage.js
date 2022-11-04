@@ -2,16 +2,9 @@ import React from "react";
 import "./HomePage.css";
 import profile_img from "./assets/profile__img.png";
 import Button from "./Component/Button";
-import Zuri from "./assets/Zuri.Internship_Logo.svg";
-import { ReactComponent as Zuri2 } from "./assets/Vector2.svg";
-import Footertext from "./assets/Footer text.svg";
-import { ReactComponent as FooterText2 } from "./assets/Footer2.svg";
-import I4G from "./assets/I4G.svg";
-import { ReactComponent as I4G2 } from "./assets/I4G2.svg";
-import slack from "./assets/slack.svg";
-import Icon from "./assets/Icon.svg";
 import AvatarShareButton from "./assets/AvatarShareButton.svg";
 import ThreeDots from "./assets/three-dots.svg";
+import Footer from "./Component/Footer";
 
 export default function HomePage() {
   return (
@@ -87,23 +80,10 @@ export default function HomePage() {
         >
           <p> Design Books</p>
         </Button>
-        <div className="footer-logo">
-          <img src={slack} alt=" slackLogo" id="slack" className="footer-img" />
-          <img src={Icon} alt=" GithubIcon" className="footer-img" />
-        </div>
-        <div className="innerFooter">
-          <div className="line"></div>
-          <div className="innerFooter-icons">
-            <img src={Zuri} alt="text" />
-            <img src={Footertext} alt="text" />
-            <img src={I4G} alt="I4GLogo" />
-          </div>
-        </div>
-        <div className="mobileInnerFooter">
-          <Zuri2 />
-          <FooterText2 />
-          <I4G2 />
-        </div>
+        <Button as={"a"} target="_blank" href="/contact" id="contact">
+          <p>Contact Me</p>
+        </Button>
+        <Footer />
       </div>
     </div>
   );
