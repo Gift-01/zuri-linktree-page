@@ -90,7 +90,7 @@ export default function Contact() {
           Hi there, contact me to ask me about anything you have in mind.
         </p>
         <div className="nameWrapper">
-          <div>
+          <div className="innerDiv">
             <Input
               className="inputbox"
               placeholder={"Enter your first name"}
@@ -106,7 +106,7 @@ export default function Contact() {
             ) : null}
           </div>
 
-          <div>
+          <div className="innerDiv">
             <Input
               className="inputbox"
               placeholder={"Enter your last name"}
@@ -121,7 +121,7 @@ export default function Contact() {
             ) : null}
           </div>
         </div>
-        <div>
+        <div className="innerDiv">
           <Input
             className="inputbox"
             placeholder={"yourname@email.com"}
@@ -135,7 +135,7 @@ export default function Contact() {
             <p className="error">{formik.errors.email}</p>
           ) : null}
         </div>
-        <div>
+        <div className="innerDiv">
           <label className="textAreaLabel">Message</label>
           <textarea
             className={`textarea ${
@@ -153,7 +153,7 @@ export default function Contact() {
             <p className="textbox-error">{formik.errors.message}</p>
           ) : null}
         </div>
-        <div className="inputCheckBox">
+        <div className="inputCheckBox innerDiv">
           <label
             className={
               incorrectCheckboxError

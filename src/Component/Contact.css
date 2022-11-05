@@ -60,7 +60,7 @@ form h1 {
   width: 100%;
 }
 
-div {
+.innerDiv {
   position: relative;
 }
 

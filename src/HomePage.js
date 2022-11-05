@@ -82,7 +82,7 @@ export default function HomePage() {
         >
           <p> Design Books</p>
         </Button>
-        <Button as={"a"} target="_blank" href="/contact" id="contact">
+        <Button as={"a"} href="/contact" id="contact">
           <p>Contact Me</p>
         </Button>
         <div className="footer-logo">
