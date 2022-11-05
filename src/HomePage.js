@@ -1,5 +1,7 @@
 import React from "react";
 import "./HomePage.css";
+import slack from "./assets/slack.svg";
+import Icon from "./assets/Icon.svg";
 import profile_img from "./assets/profile__img.png";
 import Button from "./Component/Button";
 import AvatarShareButton from "./assets/AvatarShareButton.svg";
@@ -83,6 +85,10 @@ export default function HomePage() {
         <Button as={"a"} target="_blank" href="/contact" id="contact">
           <p>Contact Me</p>
         </Button>
+        <div className="footer-logo">
+          <img src={slack} alt=" slackLogo" id="slack" className="footer-img" />
+          <img src={Icon} alt=" GithubIcon" className="footer-img" />
+        </div>
         <Footer />
       </div>
     </div>

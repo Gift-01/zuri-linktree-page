@@ -1,17 +1,22 @@
 import React from "react";
+import "./input.css";
 
 const Input = ({
-  placeholder,
   label,
-  checkBoxLabel,
+  className,
   type = "",
   as: Component = "input",
+  error,
+  ...rest
 }) => {
   return (
-    <div>
-      <label>{label}</label>
-      <Component placeholder={placeholder} type={type} />
-      <label>{checkBoxLabel}</label>
+    <div className={className}>
+      <label className="inputLabel">{label}</label>
+      <Component
+        type={type}
+        className={`inputElement ${error ? "incorrect-input" : ""}`}
+        {...rest}
+      />
     </div>
   );
 };
